@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("register.gif");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image in the viewport */
+            color: #333;
+        }
+
+        .container {
+            background: bisque;
+            width: 350px;
+            padding: 20px 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: brown;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: brown;
+        }
+        input::placeholder {
+    color: peachpuff; /* Brown color */
+    font-style: italic; /* Optional: Adds an italic style for better distinction */
+    opacity: 1; /* Ensures the placeholder is fully visible (default is 0.5) */
+}
+
+
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            outline: none;
+            color: brown;
+        }
+
+        input:focus {
+            border-color: beige;
+        }
+
+        button {
+            padding: 10px;
+            background: burlywood;
+            color: brown;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: cornsilk;
+        }
+
+        p {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        p a {
+            text-decoration: none;
+            color: brown;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="emailPhone">Email or Phone:</label>
+            <input type="text" id="emailPhone" name="emailPhone" required placeholder="Enter Email or Phone">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter Password">
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script type="module" src="register.js"></script>
+</body>
+</html>

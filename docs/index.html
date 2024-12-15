@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: peachpuff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background: beige;
+            width: 400px;
+            padding: 20px 30px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            color: brown;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 15px 0;
+            color: brown;
+        }
+
+        strong {
+            color: burlywood;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: brown;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            color: burlywood;
+            text-decoration: underline;
+        }
+
+        .actions {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Your Dashboard</h2>
+
+        <!-- Display email only -->
+        <p><strong>Email:</strong> <span id="email">johndoe@example.com</span></p>
+
+        <!-- Links to other sections of the app -->
+        <div class="actions">
+            <ul>
+                <li><a href="profile.html">Edit Profile</a></li>
+                <li><a href="rewards.html">View Rewards</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Firebase Authentication and Session Management -->
+    <script type="module" src="userdashboard.js"></script>
+</body>
+</html>
